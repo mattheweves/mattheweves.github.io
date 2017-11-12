@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ACCELERATED</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/skeleton.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="../../css/github-prettify-theme.css">
+  <script src="../../js/site.js"></script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body class="code-snippets-visible">
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section-hero">
+        <div class="accelerated">
+          <div class="container">
+            <div class="row">
+                <br />
+                <div class="booya-box-blk">
+                  <h4 class="hero-heading-accelerated">ACCELERATED<br /></h4><h5> The Ultimate Automated Search Tool for Classic Cars</h5>
+                </div>
+                <br />
+            </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="../../index.html">HOME</a></li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#" data-popover="#codeNavPopover">Projects</a>
+          <div id="codeNavPopover" class="popover">
+            <ul class="popover-list">
+              <li class="popover-item">
+                <a class="popover-link" href="../kidfo/kidfo.html">KIDFO</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="../accelerated/accelerated.html">ACCELERATED</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="../firehose/firehose.html">FIREHOSE APPS</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar-item"><a class="navbar-link" href="../../about.html">ABOUT ME</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+        <!-- Why use Skeleton -->
+        <div class="docs-section" id="intro">
+          <h6 class="docs-header">Accelerated</h6>
+          <p>
+            Accelerated was a dream project. I worked with a boutique car dealership who specialized primarily in 60s and 70s European Classics.
+            I was brought in to solution and attempt to automate what was previously a 4-6 hour daily manual search, and Accelerated did that and far more.  In addition,
+            we added filters and categorization of vehicles so it was easier to target
+            vehicles of interest and review previous ads.  Many ads expire, and the comps are lost, but in our system we had historical records of advertised vehicles for them to compare to.
+            Additional abilities to report on these vehicles and find historical pricing information
+            proved invaluable in investment decisions. Overall, it provided ultimate power into their
+            hands and an edge on finding vehicles within 5 minutes of them being advertised.
+          </p>
+        </div>
+
+    <div class="container">
+      The UI was modeled after Feedly, a widely used RSS reader with a familiar look and feel, but optimized for automobile search and workflow.<br /><br />
+      <img class="u-max-full-width macbook" src="../../images/accelerated/accelerated.png"></img>
+    </div>
+    <hr />
+
+  <div class="section categories">
+    <div class="container">
+      <h3 class="section-heading">Primary Technologies Used</h3>
+      <div class="row">
+        <div class="three columns category img-center">
+          <img class="u-max-full-width" height="105px" src="../../images/accelerated/lamp.png">
+        </div>
+        <div class="three columns category img-center">
+          <img class="u-max-full-width" height="105px" src="../../images/accelerated/tinytiny.png"><br />
+          Tiny Tiny RSS
+        </div>
+        <div class="three columns category img-center">
+          <img class="u-max-full-width" height="105px" src="../../images/accelerated/docean.png">
+        </div>
+        <div class="three columns category img-center">
+          <img class="u-max-full-width" height="105px" src="../../images/accelerated/googleauth.png"><br />
+          Google Authenticator
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="clear"></div>
+<hr />
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading">App Components:</h3>
+      <p class="section-description"><i>There are many components to this app.  The overall cloud consisted of 5 virtual servers, 3 dedicated to managing the 5300+ feeds that were searched
+      within every 5 minutes.  Problems occurred after about a years use with Craigslist, as they officially detected and banned the DigitalOcean Servers from retrieving feeds, NY, LA, all of themt. Did I do that :) ?
+      I worked with <a href="https://feedly.com/i/welcome">Feedly</a>, one of the largest RSS apps known, and even they couldn't negotiate with Craigslist to allow feed fetching on short intervals.</i></p>
+      <img class="u-max-full-width img-center" height="400px" src="../../images/accelerated/AcceleratedCloud.png"><br />
+      <br /><br />
+      <h5 class="section-heading">Accelerated Private Client (Web Application)</h5><br />
+      <p class="section-description">
+        <div class="row">
+          <div class="four columns category img-center">
+            <img class="u-max-full-width" src="../../images/accelerated/acc1.jpg"><br />
+          </div>
+          <div class="eight columns category"><br />
+            This is the primary and only component that a user would be familiar with, as it is the web based application that users log
+            into in order to access the automotive feeds and process ads. This application utilizes every other component in the framework
+            to produce the end product called the Accelerated Private Client shown in the Live Feed screenshot above.
+          </div>
+        </div>
+        <br /><br />
+      </p>
+
+  <!-- Carrierwave -->
+
+    <h5 class="section-heading">Make/Model Filters and System Design</h5>
+      <p class="section-description">
+        This is all work done to filter down the Make/Model/Year Range into the proper bucket. The filter engine utilizes REGEXP (Regular Expression) strings to analyze the three identifying components of the vehicle ad to determine what vehicle it is.
+      </p>
+      <img class="u-max-full-width" height="400px" src="../../images/accelerated/filters.png"><br /><br />
+
+  <!-- End section -->
+
+      <!-- Rails Relationships -->
+
+      <h5 class="section-heading">Accelerated Feed Manager</h5>
+        <p class="section-description">
+          This component of the Accelerated Framework stores all web addresses of the specific search queries across the Accelerated Source Repository. For purposes of organization and maintenance, it also contains a URL Shortening tool to take extremely long search queries and shorten them to an Accelerated Lookup Code (ALC).
+          <br /><br />
+          <img class="u-max-full-width" src="../../images/accelerated/feedmanager.png"><br /><br />
+
+      </p>
+
+      <!-- End section -->
+
+      <!-- Devise Registration and Session Building via the API -->
+      <h5 class="section-heading">Images Courtesy Of:</h5>
+      <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@thibautnagorny?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Thibaut Nagorny"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title>
+        <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Thibaut Nagorny</span></a>
+        <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@jonatanhernandez?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Jonatan Hernandez"><span style="display:inline-block;padding:2px 3px;">
+          <svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5}}} 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Jonatan Hernandez</span></a>
+          <a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px;" href="https://unsplash.com/@egla?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Hannes Egler"><span style="display:inline-block;padding:2px 3px;"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-1px;fill:white;" viewBox="0 0 32 32"><title></title>
+            <path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg></span><span style="display:inline-block;padding:2px 3px;">Hannes Egler</span></a>
+
+
+    <hr />
+    <!-- Contact Me! -->
+           <div class="docs-section" id="contact">
+             <h4 class="docs-header">CONTACT</h4>
+               <div class="row contact">
+                 <div class="one column">
+                   |
+                 </div>
+                 <div class="two columns">
+                     <a href="http://www.linkedin.com/in/mattheweves" target="_blank"><i class="fa fa-linkedin-square" ></i></a>
+                 </div>
+                 <div class="one column">
+                   |
+                 </div>
+                 <div class="four columns">
+                   <a href="mailto:matteves@me.com" class="email">matteves@me.com</a>
+                 </div>
+                 <div class="one column">
+                   |
+                 </div>
+                 <div class="two columns">
+                     <a href="http://github.com/mattheweves" target="_blank"><i class="fa fa-github-square" ></i></a>
+                 </div>
+                 <div class="one column">
+                   |
+                 </div>
+               </div>
+               <hr>
+             </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

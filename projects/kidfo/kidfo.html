@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>KIDFO</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../../css/normalize.css">
+  <link rel="stylesheet" href="../../css/skeleton.css">
+  <link rel="stylesheet" href="../../css/custom.css">
+
+  <!-- SCRIPTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="../../js/site.js"></script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="section-hero">
+    <div class="kidfo" >
+      <div class="container">
+        <div class="row">
+            <br />
+            <div class="booya-box">
+              <img class="u-max-full-width logo" src="../../images/kidfologo.png">
+              <h4 class="hero-heading-kidfo">Provide peace of mind to parents & their trusted cared providers.</h4>
+            </div>
+            <br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+    <div class="container">
+      <ul class="navbar-list">
+        <li class="navbar-item"><a class="navbar-link" href="../../index.html">HOME</a></li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="#" data-popover="#codeNavPopover">Projects</a>
+          <div id="codeNavPopover" class="popover">
+            <ul class="popover-list">
+              <li class="popover-item">
+                <a class="popover-link" href="projects/kidfo/kidfo.html">KIDFO</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="../accelerated/accelerated.html">ACCELERATED</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="../firehose/firehose.html">FIREHOSE APPS</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="navbar-item"><a class="navbar-link" href="../../about.html">ABOUT ME</a></li>
+        <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Why use Skeleton -->
+  <div class="docs-section" id="intro">
+    <h6 class="docs-header"></h6>
+    <div class="row">
+      <div class="one-third column value">
+        <div class="value">
+          <img class="u-max-full-width macbook" src="../../images/kidfodesktop.png"></img><br /><br />
+          <a class="button button-sm img-center" target="_blank" href="https://kidfo-app-reactjs.herokuapp.com/">Demo The App</a>
+        </div>
+      </div>
+      <div class="one-third column value">
+        <h5 class="value-heading">KIDFO</h5>
+        <p class="value-description">
+          Store your child's basic information in the app. Name, Birthday, Eat Routine,
+          Sleep Routine, No-Nos, and more.
+        </p>
+      </div>
+      <div class="one-third column value">
+        <h5 class="value-heading">SITTERS</h5>
+        <p class="value-description">
+          Invite trusted parties to the app, and once they sign up and accept they'll be connected
+          to your family and able to access vital information while under their care.  No more worrying
+          about writing a list out last minute. The information is stored in the app and always available
+          to your care team.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div></div>
+    <hr />
+  <div class="section categories demo">
+    <div class="container">
+      <h3 class="section-heading">Primary Technologies Used</h3>
+        <div class="row">
+          <div class="three columns category img-center">
+            <img class="u-max-full-width" height="105px" src="../../images/rails.png">
+          </div>
+          <div class="three columns category img-center">
+            <img class="u-max-full-width" height="105px" src="../../images/react.png">
+          </div>
+          <div class="three columns category img-center">
+            <img class="u-max-full-width" height="105px" src="../../images/reactrouter.png">
+          </div>
+          <div class="three columns category img-center">
+            <img class="u-max-full-width" height="105px" src="../../images/amazons3.png">
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <hr />
+
+    <div class="section get-help">
+      <div class="container">
+        <h3 class="section-heading">KIDFO API</h3><br />
+        <h5>My first crack at an API from the ground up.</h5>
+          <ul>
+            <li>Validation errors can occur when creating or updating entities.
+              <ul><li>If so, it will produce the HTTP status code of 422 or unprocessable_entity.</li></ul>
+          </li>
+          <li>Deletion requests will produce a status code of 204 or no_content when elements are successfully removed.<br />
+          </li>
+          <li>Resources not found will result in the HTTP status code of 404 or not_found.
+          </li></ul>
+        <pre><code>
+GET /kids
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+GET /kids/:id
+Description: this retrieves a specific kid in a JSON format.
+
+GET /sitters
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+GET /families
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+GET /family/:id
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+GET /user/:id
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+POST /kids
+Description: create a new kid in the application.
+
+The create action expects the following field to be present in the POST data of the request.
+
+      {
+        kid: {
+          first name (middle name optional): “Bryar Louise”
+        }
+      }
+
+PATCH /kids/:id
+Description: update an existing kid in the database.
+
+The update action expects the following field to be present in the form data of the request.
+
+      {
+        kid: {
+          first name (middle name optional): “Bryar Louise”,
+          all optional fields:
+
+        }
+      }
+
+DELETE /kids/:id
+Description: deletes the kid from the application.
+
+POST /kids/:id/favorites
+Description: add a favorite to the kid. This expects the following fields to be present in the POST data of the request:
+
+      {
+        favorite: {
+          name: “Soccer”,
+          category: “Activity”
+        }
+      }
+
+DELETE /favorites/:id
+Description: this removes the favorite with the provided id from the application.
+
+        </code></pre>
+
+  </div>
+
+<hr />
+
+  <div class="section get-help">
+    <div class="container">
+      <h3 class="section-heading">Project Challenges:</h3><br />
+            <h5 class="section-heading">JSON Token Authentication</h5>
+            <p class="section-description">
+              It was important to break this into baby steps.  You have to understand
+              each step of the process, or it is VERY easy to get lost and difficult to troubleshoot.  I used the Simple Token Authentication as
+              it couples with Devise, a widely used authentication gem for Rails.
+              <br /><br />
+              The gem installation is straightforward, but getting the flow right and token storage design on the React side dialed in takes a bit of planning, but
+              very exciting once you get it working!
+            </p>
+
+            <pre><code>const userAuth = () => {
+              const session = {
+                email: localStorage.getItem('email'),
+                token: localStorage.getItem('token')
+              };
+              return { 'headers': { 'X-User-Email': session.email, 'X-User-Token': session.token  } };
+            };
+
+export default userAuth;
+            </code></pre>
+
+        <br />
+  <!-- Carrierwave -->
+        <h5 class="section-heading">Carrierwave Images / Amazon S3</h5>
+        <div class="row">
+          <div class="eight columns category">
+            <p class="section-description">
+
+              This is a piece of cake if you are doing image uploading in a full Rails App. But when using Rails as the backend and trying to integrate
+              with a different front-end framework, you need to pass that image from (in this case) your React
+              Front End to the Rails API.  How do you store an image? Well in short you have to:
+              Provide a form for image upload, convert it to a gigantic string (base64), send that to your API, have your API convert
+              it back to an image, and finally upload that to your storage provider (mine was Amazon S3).
+            </p>
+          </div>
+          <div class="four columns category img-center">
+            <img class="u-max-full-width bordered" src="../../images/kidfoshot.png">
+          </div>
+        </div>
+  <!-- End section -->
+      <br />
+      <!-- Rails Relationships -->
+
+      <h5 class="section-heading">Rails Relationships</h5>
+        <p class="section-description">
+          This is truly the perfect project for learning about parent and child relationships. Why? Because we are
+          literally storing parent and child relationships.  Here's how I broke it down.  First was grasping the  "has_many through"
+          rails relationships, in the case of Kidfo it was:<br />
+          <pre><code>
+            belongs_to :family
+            has_many :kids, through: :family
+          </code></pre>
+          Additionally, the idea of "sitters" whose class is User and role based permissions and functionality added complexity that took some good time and testing.
+          <pre><code>
+            #Sitters
+            has_many :familysitters, foreign_key: :sitter_id
+            has_many :families, through: :familysitters, source: :family
+          </code></pre>
+          <br /><br />
+          The <a href="http://guides.rubyonrails.org/association_basics.html">rubydocs Physician/Appointment/Patient</a> metaphor was very helpful in building this out.
+      </p>
+      <br />
+      <!-- End section -->
+
+      <!-- Devise Registration and Session Building via the API -->
+      <h5 class="section-heading">Devise Registration and Session Building via API</h5>
+      <p class="section-description">
+          This kicked my butt. I don't know why it was so hard to work through the different docs on this, because the code is straight
+          forward as it gets, but the reason this kept failing had nothing to do with code. It was the form itself I was testing with
+          and not using Postman or Paw to test (whoops). Lesson Learned:
+          <a href="https://www.getpostman.com/" target="_blank">Postman</a> or Paw is your friend - sometimes it's the tool you are using not the code itself!
+      </p>
+  </div>
+
+  <!-- Contact Me! -->
+         <div class="docs-section" id="contact">
+           <h4 class="docs-header">CONTACT</h4>
+             <div class="row contact">
+               <div class="one column">
+                 |
+               </div>
+               <div class="two columns">
+                   <a href="http://www.linkedin.com/in/mattheweves" target="_blank"><i class="fa fa-linkedin-square" ></i></a>
+               </div>
+               <div class="one column">
+                 |
+               </div>
+               <div class="four columns">
+                 <a href="mailto:matteves@me.com" class="email">matteves@me.com</a>
+               </div>
+               <div class="one column">
+                 |
+               </div>
+               <div class="two columns">
+                   <a href="http://github.com/mattheweves" target="_blank"><i class="fa fa-github-square" ></i></a>
+               </div>
+               <div class="one column">
+                 |
+               </div>
+             </div>
+             <hr>
+           </div>
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
