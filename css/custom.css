@@ -216,9 +216,48 @@ code {
   bottom: 5px;
   left: 5px; }
 
+.navbar{
+    display: block;
+}
 
-/* Larger than phone */
-/*@media (min-width: 550px) {*/
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  line-height: 6.5rem;
+  color: #222; }
+
+  .navbar-list {
+    list-style: none;
+    margin-left: 35px;
+    margin-bottom: 0; }
+
+    .popover-list {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+    .popover-item {
+      padding: 0;
+      margin: 0; }
+    .popover-link {
+      position: relative;
+      color: #222;
+      display: block;
+      padding: 8px 20px;
+      border-bottom: 1px solid #eee;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.0rem;
+      font-weight: 600;
+      text-align: left;
+      letter-spacing: .1rem; }
+
+/* END NAVBAR MOBILE */
+
+@media (min-width: 550px) {
   .header {
     margin-top: 3rem;
   }
@@ -241,10 +280,10 @@ code {
     height: 100%;
     left: 0;
     max-height: none; }
-/*}*/
+}
 
- /*Larger than tablet
-@media (min-width: 750px) {*/
+ /*Larger than tablet */
+@media (min-width: 750px) {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
@@ -358,8 +397,7 @@ code {
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
-
-
+}
 
 /* Sections*/
 
