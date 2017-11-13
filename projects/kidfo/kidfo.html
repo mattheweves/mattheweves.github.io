@@ -89,7 +89,7 @@
       <div class="one-third column value">
         <div class="value">
           <img class="u-max-full-width macbook" src="../../images/kidfodesktop.png"></img><br /><br />
-          <a class="button button-sm img-center" target="_blank" href="https://kidfo-app-reactjs.herokuapp.com/">Demo The App</a>
+        <!--  <a class="button button-sm img-center" target="_blank" href="https://kidfo-app-reactjs.herokuapp.com/">Demo The App</a> -->
         </div>
       </div>
       <div class="one-third column value">
@@ -129,14 +129,8 @@
           <div class="three columns category img-center">
             <img class="u-max-full-width" height="105px" src="../../images/amazons3.png">
           </div>
-        </div>
-    </div>
-  </div>
-
-  <hr />
-
-    <div class="section get-help">
-      <div class="container">
+        </div><br /><br />
+        <div class="row">
         <h3 class="section-heading">KIDFO API</h3><br />
         <h5>My first crack at an API from the ground up.</h5>
           <ul>
@@ -264,14 +258,14 @@ export default userAuth;
           literally storing parent and child relationships.  Here's how I broke it down.  First was grasping the  "has_many through"
           rails relationships, in the case of Kidfo it was:<br />
           <pre><code>
-            belongs_to :family
-            has_many :kids, through: :family
+belongs_to :family
+has_many :kids, through: :family
           </code></pre>
           Additionally, the idea of "sitters" whose class is User and role based permissions and functionality added complexity that took some good time and testing.
           <pre><code>
-            #Sitters
-            has_many :familysitters, foreign_key: :sitter_id
-            has_many :families, through: :familysitters, source: :family
+#Sitters
+has_many :familysitters, foreign_key: :sitter_id
+has_many :families, through: :familysitters, source: :family
           </code></pre>
           <br /><br />
           The <a href="http://guides.rubyonrails.org/association_basics.html">rubydocs Physician/Appointment/Patient</a> metaphor was very helpful in building this out.
