@@ -224,7 +224,11 @@ Description: this removes the favorite with the provided id from the application
                 email: localStorage.getItem('email'),
                 token: localStorage.getItem('token')
               };
-              return { 'headers': { 'X-User-Email': session.email, 'X-User-Token': session.token  } };
+              return { 'headers': {
+                    'X-User-Email': session.email,
+                    'X-User-Token': session.token
+                    }
+                  };
             };
 
 export default userAuth;
