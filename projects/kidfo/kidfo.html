@@ -77,7 +77,6 @@
           </div>
         </li>
         <li class="navbar-item"><a class="navbar-link" href="../../now.html">NOW</a></li>
-        <li class="navbar-item"><a class="navbar-link" href="../../manifesto.html">MANIFESTO</a></li>
         <li class="navbar-item"><a class="navbar-link" href="../../about.html">ABOUT ME</a></li>
         <li class="navbar-item"><a class="navbar-link" href="#contact">CONTACT</a></li>
       </ul>
@@ -132,79 +131,6 @@
             <img class="u-max-full-width" height="105px" src="../../images/amazons3.png">
           </div>
         </div><br /><br />
-        <div class="row">
-        <h3 class="section-heading">KIDFO API</h3><br />
-        <h5>My first crack at an API from the ground up.</h5>
-          <ul>
-            <li>Validation errors can occur when creating or updating entities.
-              <ul><li>If so, it will produce the HTTP status code of 422 or unprocessable_entity.</li></ul>
-          </li>
-          <li>Deletion requests will produce a status code of 204 or no_content when elements are successfully removed.<br />
-          </li>
-          <li>Resources not found will result in the HTTP status code of 404 or not_found.
-          </li></ul>
-        <pre><code>
-GET /kids
-Description: this produces an array containing all of the kids the user has in a JSON format.
-
-GET /kids/:id
-Description: this retrieves a specific kid in a JSON format.
-
-GET /sitters
-Description: this produces an array containing all of the sitters the family has in a JSON format.
-
-GET /families
-Description: this produces an array containing all of the families the user has in a JSON format.
-
-GET /family/:id
-Description: this retrieves a specific family in a JSON format.
-
-GET /user/:id
-Description: this retrieves a user's info in a JSON format.
-
-POST /kids
-Description: create a new kid in the application.
-
-The create action expects the following field to be present in the POST data of the request.
-
-      {
-        kid: {
-          first name (middle name optional): “Bryar Louise”
-        }
-      }
-
-PATCH /kids/:id
-Description: update an existing kid in the database.
-
-The update action expects the following field to be present in the form data of the request.
-
-      {
-        kid: {
-          first name (middle name optional): “Bryar Louise”,
-          all optional fields:
-
-        }
-      }
-
-DELETE /kids/:id
-Description: deletes the kid from the application.
-
-POST /kids/:id/favorites
-Description: add a favorite to the kid. This expects the following fields to be present in the POST data of the request:
-
-      {
-        favorite: {
-          name: “Soccer”,
-          category: “Activity”
-        }
-      }
-
-DELETE /favorites/:id
-Description: this removes the favorite with the provided id from the application.
-
-        </code></pre>
-
-  </div>
 
 <hr />
 
@@ -287,6 +213,84 @@ has_many :families, through: :familysitters, source: :family
           <a href="https://www.getpostman.com/" target="_blank">Postman</a> or Paw is your friend - sometimes it's the tool you are using not the code itself!
       </p>
   </div>
+
+  <hr />
+
+
+  <div class="row">
+  <h3 class="section-heading">KIDFO API</h3><br />
+  <h5>My first crack at an API from the ground up.</h5>
+    <ul>
+      <li>Validation errors can occur when creating or updating entities.
+        <ul><li>If so, it will produce the HTTP status code of 422 or unprocessable_entity.</li></ul>
+    </li>
+    <li>Deletion requests will produce a status code of 204 or no_content when elements are successfully removed.<br />
+    </li>
+    <li>Resources not found will result in the HTTP status code of 404 or not_found.
+    </li></ul>
+  <pre><code>
+GET /kids
+Description: this produces an array containing all of the kids the user has in a JSON format.
+
+GET /kids/:id
+Description: this retrieves a specific kid in a JSON format.
+
+GET /sitters
+Description: this produces an array containing all of the sitters the family has in a JSON format.
+
+GET /families
+Description: this produces an array containing all of the families the user has in a JSON format.
+
+GET /family/:id
+Description: this retrieves a specific family in a JSON format.
+
+GET /user/:id
+Description: this retrieves a user's info in a JSON format.
+
+POST /kids
+Description: create a new kid in the application.
+
+The create action expects the following field to be present in the POST data of the request.
+
+{
+  kid: {
+    first name (middle name optional): “Bryar Louise”
+  }
+}
+
+PATCH /kids/:id
+Description: update an existing kid in the database.
+
+The update action expects the following field to be present in the form data of the request.
+
+{
+  kid: {
+    first name (middle name optional): “Bryar Louise”,
+    all optional fields:
+
+  }
+}
+
+DELETE /kids/:id
+Description: deletes the kid from the application.
+
+POST /kids/:id/favorites
+Description: add a favorite to the kid. This expects the following fields to be present in the POST data of the request:
+
+{
+  favorite: {
+    name: “Soccer”,
+    category: “Activity”
+  }
+}
+
+DELETE /favorites/:id
+Description: this removes the favorite with the provided id from the application.
+
+  </code></pre>
+
+</div>
+
   <!-- Contact Me! -->
          <div class="docs-section contact-center" id="contact">
            <h4 class="docs-header">CONTACT</h4>
